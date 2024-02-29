@@ -1,0 +1,36 @@
+1. Set user name:
+   git config --global user.name "Your Name"
+
+2. Set user email:
+   git config --global user.email "your_email@example.com"
+
+3. Set default text editor:
+   git config --global core.editor "vim"  # Change "vim" to your preferred text editor
+
+4. Set default branch name for new repositories:
+   git config --global init.defaultBranch main  # Change "main" to your preferred default branch name
+
+5. Show current Git configuration:
+   git config --list
+
+6. Set credential cache timeout (in seconds):
+   git config --global credential.helper 'cache --timeout=3600'  # Change 3600 to desired timeout in seconds
+
+7. Set colorized output:
+   git config --global color.ui auto
+
+8. Set merge tool (e.g., for resolving conflicts):
+   git config --global merge.tool vimdiff  # Change "vimdiff" to your preferred merge tool
+
+9. Set the remote URL:
+   git remote set-url origin [new remote URL]
+
+10. Unset a specific configuration option:
+    git config --global --unset [option]
+
+11. Set proxy for Git:
+    git config --global http.proxy http://proxy.example.com:8080
+
+12. Unset proxy for Git:
+    git config --global --unset http.proxy
+
