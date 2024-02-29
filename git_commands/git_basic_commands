@@ -52,5 +52,8 @@
 18. List all remote repositories associated with the local repository:
     git remote -v
 
-19. List all staged files
+19. List all staged files:
     git ls-files
+
+20. Display a history of commits in online:
+    git log --oneline
