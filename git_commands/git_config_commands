@@ -1,3 +1,5 @@
+Git configuration commands along with their descriptions
+
 1. Set user name:
    git config --global user.name "Your Name"
 
@@ -33,4 +35,43 @@
 
 12. Unset proxy for Git:
     git config --global --unset http.proxy
+
+set configurations to apply only to the current local repository, you can use the --local flag with git config commands.
+
+1. Set user name locally:
+   git config --local user.name "Your Name"
+
+2. Set user email locally:
+   git config --local user.email "your_email@example.com"
+
+3. Set default text editor locally:
+   git config --local core.editor "vim"  # Change "vim" to your preferred text editor
+
+4. Set default branch name for new repositories locally:
+   git config --local init.defaultBranch main  # Change "main" to your preferred default branch name
+
+5. Show current Git configuration (locally):
+   git config --local --list
+
+6. Set credential cache timeout locally (in seconds):
+   git config --local credential.helper 'cache --timeout=3600'  # Change 3600 to desired timeout in seconds
+
+7. Set colorized output locally:
+   git config --local color.ui auto
+
+8. Set merge tool locally (e.g., for resolving conflicts):
+   git config --local merge.tool vimdiff  # Change "vimdiff" to your preferred merge tool
+
+9. Set the remote URL locally:
+   git remote set-url --push origin [new remote URL]
+
+10. Unset a specific configuration option locally:
+    git config --local --unset [option]
+
+11. Set proxy for Git locally:
+    git config --local http.proxy http://proxy.example.com:8080
+
+12. Unset proxy for Git locally:
+    git config --local --unset http.proxy
+
 
